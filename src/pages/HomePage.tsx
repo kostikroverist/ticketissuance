@@ -1,6 +1,4 @@
-import FlightBookingCard from '@/components/FlightBookingCard';
 import TransferFilter from '@/components/TransferFilter';
-import { allFlights } from '../../constantsVariable';
 import { checkboxFilters } from '../../constantsVariable';
 import { useState } from 'react';
 import SortToggle from '@/components/SortToggle';
@@ -16,7 +14,7 @@ const HomePage = () => {
         console.log('Активні фільтри:', activeIds);
     };
     return (
-        <div className="pt-10">
+        <div className="pt-10 bg-[#f3f7fa] min-h-screen ">
             <div
                 style={{ boxShadow: '0px 0px 50px 0px rgba(0,0,0,0.2)' }}
                 className="shadow-md   mx-auto w-[75px] h-[75px] flex justify-center items-center space-x-2 mb-4  bg-[#2196f3] rounded-full p-2"
@@ -29,9 +27,6 @@ const HomePage = () => {
                 </div>
                 <div className=" flex flex-col space-y-5">
                     <SortToggle onSortChange={option => console.log('Сортировка по:', option)} />
-                    {allFlights.map(flight => (
-                        <FlightBookingCard key={flight.id} flightOption={flight} />
-                    ))}
                 </div>
             </div>
         </div>

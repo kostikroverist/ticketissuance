@@ -1,0 +1,108 @@
+{
+  "search": { "searchId": "mocked-id-123" },
+  "tickets": {
+    "tickets": [
+      {
+        "price": 10000,
+        "carrier": "SU",
+        "segments": [
+          {
+            "origin": "MOW",
+            "destination": "LED",
+            "date": "2025-07-01T10:00:00.000Z",
+            "stops": ["KZN"],
+            "duration": 120
+          },
+          {
+            "origin": "LED",
+            "destination": "MOW",
+            "date": "2025-07-10T15:00:00.000Z",
+            "stops": [],
+            "duration": 100
+          }
+        ]
+      },
+      {
+        "price": 8500,
+        "carrier": "S7",
+        "segments": [
+          {
+            "origin": "MOW",
+            "destination": "OVB",
+            "date": "2025-07-02T08:30:00.000Z",
+            "stops": [],
+            "duration": 180
+          },
+          {
+            "origin": "OVB",
+            "destination": "MOW",
+            "date": "2025-07-12T14:20:00.000Z",
+            "stops": ["SVX"],
+            "duration": 200
+          }
+        ]
+      },
+      {
+        "price": 12500,
+        "carrier": "U6",
+        "segments": [
+          {
+            "origin": "KUF",
+            "destination": "LED",
+            "date": "2025-07-03T11:45:00.000Z",
+            "stops": ["VKO", "KZN"],
+            "duration": 240
+          },
+          {
+            "origin": "LED",
+            "destination": "KUF",
+            "date": "2025-07-13T19:00:00.000Z",
+            "stops": [],
+            "duration": 220
+          }
+        ]
+      },
+      {
+        "price": 9600,
+        "carrier": "DP",
+        "segments": [
+          {
+            "origin": "MOW",
+            "destination": "KZN",
+            "date": "2025-07-04T09:00:00.000Z",
+            "stops": [],
+            "duration": 90
+          },
+          {
+            "origin": "KZN",
+            "destination": "MOW",
+            "date": "2025-07-14T17:15:00.000Z",
+            "stops": [],
+            "duration": 95
+          }
+        ]
+      },
+      {
+        "price": 11000,
+        "carrier": "SU",
+        "segments": [
+          {
+            "origin": "LED",
+            "destination": "AER",
+            "date": "2025-07-05T06:00:00.000Z",
+            "stops": ["ROV"],
+            "duration": 150
+          },
+          {
+            "origin": "AER",
+            "destination": "LED",
+            "date": "2025-07-15T21:00:00.000Z",
+            "stops": ["KRR", "MSK"],
+            "duration": 260
+          }
+        ]
+      }
+    ],
+    "stop": true
+  }
+}
