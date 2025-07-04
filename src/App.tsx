@@ -1,11 +1,18 @@
 import './App.css';
-import HomePage from './pages/HomePage';
+import { Navigate, Route, Routes } from 'react-router';
+import Layout from './layout/Layout';
+import CheapTicketsPage from './pages/CheapTicketsPage';
+import FastTicketsPage from './pages/FastTicketsPage';
 
 function App() {
     return (
-        <div className="bg-[#f3f7fa] min-h-screen ">
-            <HomePage />
-        </div>
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route index element={<Navigate to="/cheap" replace />} />
+                <Route path="cheap" element={<CheapTicketsPage />} />
+                <Route path="fast" element={<FastTicketsPage />} />
+            </Route>
+        </Routes>
     );
 }
 
